@@ -4,14 +4,20 @@
 int main()
 {
     // declare variables
+    int a,b,c;
+    float x1,x2;
+    printf("a:");
+    scanf("%d",&a);
+    printf("b:");
+    scanf("%d",&b);
+    printf("c:");
+    scanf("%d",&c);
 
-    // get user input
+    x1=(-b+sqrt(b*b-4*a*c))/(2*a);
+    x2=(-b-sqrt(b*b-4*a*c))/(2*a);
 
-    /* calculate the discriminant   <-- this is a comment for multiple lines
-     the discriminant is: b² - 4ac
-    */
-
-    // according to the value of the discriminant, calculate the roots and print the results
+    printf("x1: %f",x1);
+    printf("x2: %f",x2);
 
     return 0;
 }
